@@ -13,7 +13,7 @@ config();
 const app = exp();
 //enable cors
 app.use(cors({
-  origin:['https://atpweek7.onrender.com'],
+  origin:['https://blog-app-lyart-nine-60.vercel.app/'],
   credentials:true
 }))
 //add cookie parser middeleware
