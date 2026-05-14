@@ -12,7 +12,7 @@ import cloudinary from "../config/cloudinary.js";
 config();
 
 //Route for register
-commonApp.post("/users", upload.single("profileImageUrl"), async (req, res) => {
+commonApp.post("/users", upload.single("profileImageUrl"), async (req, res, next) => {
   let cloudinaryResult;
   try {
     let allowedRoles = ["USER", "AUTHOR"];
