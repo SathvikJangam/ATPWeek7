@@ -13,7 +13,7 @@ config();
 const app = exp();
 //enable cors
 app.use(cors({
-  origin:['https://blog-app-lyart-nine-60.vercel.app/','http://localhost:5173'],
+  origin:['https://blog-app-lyart-nine-60.vercel.app','http://localhost:5173'],
   credentials:true
 }))
 //add cookie parser middeleware
